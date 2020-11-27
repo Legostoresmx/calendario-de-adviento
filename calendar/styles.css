@@ -1,0 +1,157 @@
+.calendar{
+    display: flex;
+    justify-content: center;
+}
+
+.calendar__container{
+    display: grid;
+    grid-template-columns: [inicio] 155px [linea2] 66px [linea3] 34px [linea4] 108px [linea5] 100px [linea6] 41px [linea7] 69px [linea8] 78px [linea9] 70px [linea10] 76px [linea11] 26px [linea12] 214px [final];
+    grid-template-rows: [inicio] 200px [fila2] 40px [fila3] 115px [fila4] 50px [fila5] 197px [fila6] 51px [fila7] 160px [fila8] 80px [fila9] 40px [fila10] 50px [fila11] 80px [fila12] 27px [fila13] 41px [fila14] 113px [fila15] 113px [fila16] 200px [final];
+    grid-gap: 5px;
+    min-height: 100vh;
+    height: auto;
+}
+
+.calendar--item{
+    border: 1px solid blue;
+    background-size: cover;
+    background-position: center center;
+    background-repeat: no-repeat;
+}
+.item__img{
+    width: 100%;
+    height: max-content;
+}
+.calendar--item:nth-of-type(1){
+    /* background-image: url(./assets/1.svg); */
+    grid-column: inicio / linea3;
+}
+
+.calendar--item:nth-of-type(2){
+    /* background-image: url(./assets/2.svg); */
+    grid-column: linea3 / linea7;
+}
+.calendar--item:nth-of-type(3){
+    /* background-image: url(./assets/3.svg); */
+    grid-column: linea7 / linea9;
+}
+.calendar--item:nth-of-type(4){
+    /* background-image: url(./assets/4.svg); */
+    grid-column: linea9 / linea11;
+    grid-row: inicio / fila3;
+}
+.calendar--item:nth-of-type(5){
+    /* background-image: url(./assets/5.svg); */
+    grid-column: linea11 / final;
+    grid-row: inicio / fila3;
+}
+.calendar--item:nth-of-type(6){
+    /* background-image: url(./assets/6.svg); */
+    grid-column: inicio / linea4;
+    grid-row: fila2 / fila4;
+}
+.calendar--item:nth-of-type(7){
+    /* background-image: url(./assets/7.svg); */
+    grid-column: linea4 / linea6;
+    grid-row: fila2 / fila5;
+}
+.calendar--item:nth-of-type(8){
+    /* background-image: url(./assets/8.svg); */
+    grid-column: linea6 / linea9;
+    grid-row: fila2 / fila5;
+}
+.calendar--item:nth-of-type(9){
+    /* background-image: url(./assets/9.svg); */
+    grid-column: linea9 / final;
+    grid-row: fila3 / fila5;
+}
+.calendar--item:nth-of-type(10){
+    /* background-image: url(./assets/10.svg); */
+    grid-column: inicio / linea2;
+    grid-row: fila4 / fila6;
+}
+.calendar--item:nth-of-type(11){
+    /* background-image: url(./assets/11.svg); */
+    grid-column: linea2 / linea5;
+    grid-row: fila5 / fila6;
+}
+.calendar--item:nth-of-type(12){
+    /* background-image: url(./assets/12.svg); */
+    grid-column: linea5 / linea8;
+    grid-row: fila5 / fila6;
+}
+.calendar--item:nth-of-type(13){
+    /* background-image: url(./assets/13.svg); */
+    grid-column: linea8 / linea10;
+    grid-row: fila5 / fila7;
+}
+.calendar--item:nth-of-type(14){
+    /* background-image: url(./assets/14.svg); */
+    grid-column: linea10 / final;
+    grid-row: fila5 / fila7;
+}
+.calendar--item:nth-of-type(15){
+    /* background-image: url(./assets/15.svg); */
+    grid-column: inicio / linea3;
+    grid-row: fila6 / fila8;
+}
+.calendar--item:nth-of-type(16){
+    grid-column: linea3 / linea8;
+    grid-row: fila6 / fila8;
+}
+.calendar--item:nth-of-type(17){
+    grid-column: linea8 / linea12;
+    grid-row: fila7 / fila9;
+}
+.calendar--item:nth-of-type(18){
+    grid-column: linea12 / final;
+    grid-row: fila7 / fila10;
+}
+.calendar--item:nth-of-type(19){
+    grid-column: inicio / linea5;
+    grid-row: fila8 / fila11;
+}
+.calendar--item:nth-of-type(20){
+    grid-column: linea5 / linea8;
+    grid-row: fila8 / fila12;
+}
+.calendar--item:nth-of-type(21){
+    grid-column: linea8 / linea11;
+    grid-row: fila9 / fila13;
+}
+.calendar--item:nth-of-type(22){
+    grid-column: linea11 / final;
+    grid-row: fila10 / fila14;
+}
+.calendar--item:nth-of-type(23){
+    grid-column: inicio / linea3;
+    grid-row: fila11 / fila15;
+}
+.calendar--item:nth-of-type(24){
+    grid-column: linea3 / linea5;
+    grid-row: fila11 / fila15;
+}
+.calendar--item:nth-of-type(25){
+    grid-column: linea5 / linea8;
+    grid-row: fila12 / fila16;
+}
+.calendar--item:nth-of-type(26){
+    grid-column: linea8/ linea11;
+    grid-row: fila13 / fila16;
+}
+.calendar--item:nth-of-type(27){
+    grid-column: linea11/ final;
+    grid-row: fila14 / fila16;
+}
+.calendar--item:nth-of-type(28){
+    grid-column: inicio / linea5;
+    grid-row: fila15 / final;
+}
+.calendar--item:nth-of-type(29){
+    grid-column: linea5 / linea10;
+    grid-row: fila16 / final;
+}
+.calendar--item:nth-of-type(30){
+    grid-column: linea10 / final;
+    grid-row: fila16 / final;
+}
