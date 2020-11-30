@@ -205,9 +205,16 @@ body{
     width: 100%;
     height: 100%;
 }
+
+.item__img:hover{
+    box-shadow: 0 10px 20px rgba(236, 232, 3, 0.836), 0 6px 6px rgba(255, 230, 0, 0.932);
+}
 .calendar--item:nth-of-type(1){
     /* background-image: url(./assets/1.svg); */
     grid-column: inicio / linea3;
+}
+.calendar--item:nth-of-type(1):hover{
+    /* background-image: url(./assets/1.svg); */
 }
 
 .calendar--item:nth-of-type(2){
