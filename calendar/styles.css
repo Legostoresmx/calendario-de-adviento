@@ -68,6 +68,8 @@ body{
 
 .title--mainsection p{
     padding: 10px;
+    background-color: #1077ba;
+    border-radius: 7px;
 }
 
 .buttonSwitch__container{
