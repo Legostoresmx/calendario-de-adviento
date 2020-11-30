@@ -12,8 +12,11 @@ body{
 .bta{
     height: 30px;
     width: 100px;
-    border: 1px solid #f70000;
+    background-color: #004f90;
+    border: 2px solid #59a9f4;
+    color: white;
     cursor: pointer;
+    letter-spacing: 2px;
 }
 
 .bta:nth-of-type(1){
