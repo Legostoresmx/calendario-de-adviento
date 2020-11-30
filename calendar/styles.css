@@ -30,13 +30,14 @@ body{
     background-size: cover;
     background-position: center center;
     background-repeat: no-repeat;
-    height: 80vh;
+    min-height: 100vh;
+    max-height: 1200px;
 }
 
 .mainSection__container{
     display: grid;
     max-height: 100%;
-    height: 100%;
+    height: 80%;
     grid-template-columns: 1fr 3fr;
     grid-template-rows: .3fr 3fr;
     grid-template-areas: "uno uno" 
@@ -46,7 +47,30 @@ body{
 .title--mainsection{
     border: 1px solid rgb(255, 0, 0);
     grid-area: tres;
+    padding: 15px;
+    color: white;
 }
+.img--logo{
+    text-align: center;
+}
+
+.img--item__logo{
+    width: 20%;
+}
+
+.title--mainsection h1{
+    font-size: 40px;
+    background-color: #0000001f;
+    padding: 10px;
+    border-radius: 6px;
+}
+
+.title--mainsection p{
+    background-color: #0000001f;
+    padding: 10px;
+    border-radius: 6px;
+}
+
 .buttonSwitch__container{
     border: 1px solid rgb(0, 60, 255);
     grid-area: uno;
@@ -151,6 +175,15 @@ body{
 .calendar{
     display: flex;
     justify-content: center;
+    background-color: white;
+    border-radius: 40px;
+    /* box-shadow: 0 3px 6px rgba(0,0,0,0.16), 0 3px 6px rgba(0,0,0,0.23); */
+    /* box-shadow: 0 14px 28px rgba(0,0,0,0.25), 0 10px 10px rgba(0,0,0,0.22); */
+    margin-top: -10%;
+}
+
+.calendar--hero{
+    margin: 40px;
 }
 
 .calendar__container{
@@ -319,23 +352,38 @@ body{
     }
 }
 @media only screen and (max-width: 580px) {
+    .calendar--hero{
+        margin: 20px;
+    }
     .calendar__container{
         grid-template-columns: [inicio] 48.4px [linea2] 20.6px [linea3] 10.6px [linea4] 33.75px [linea5] 31.25px [linea6] 12.8px [linea7] 21.5px [linea8] 24.3px [linea9] 21.8px [linea10] 23.75px [linea11] 8.125px [linea12] 66.875px [final];
         grid-template-rows: [inicio] 62.5px [fila2] 12.5px [fila3] 35.9px [fila4] 15.625px [fila5] 61.5px [fila6] 15.9px [fila7] 50px [fila8] 25px [fila9] 12.5px [fila10] 15.6px [fila11] 25px [fila12] 8.4px [fila13] 12.8px [fila14] 35.3px [fila15] 35.3px [fila16] 62.5px [final];
     }
 }
+@media only screen and (max-height: 580px) and ( max-height:813px) {
+    .carousel__item{
+        width: 190px;
+            height: 337px;
+
+    }
+}
+
 
 
 @media only screen and (max-width: 550px) {
-    .mainSection{
-        height: 85vh;
+    /* .mainSection{
+        min-height: 85vh;
+
+    } */
+    .title--mainsection h1{
+        font-size: 20px;
     }
     .mainSection__container{
         display: grid;
-        max-height: 100%;
-        height: 100%;
+        /* max-height: 100%;
+        height: 100%; */
         grid-template-columns: 100vw;
-        grid-template-rows: .3fr .5fr 4fr;
+        grid-template-rows: .3fr 55px 4fr;
         grid-template-areas: "uno" 
                              "dos"
                              "tres";
