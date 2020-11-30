@@ -188,7 +188,6 @@ body{
     grid-template-columns: [inicio] 155px [linea2] 66px [linea3] 34px [linea4] 108px [linea5] 100px [linea6] 41px [linea7] 69px [linea8] 78px [linea9] 70px [linea10] 76px [linea11] 26px [linea12] 214px [final];
     grid-template-rows: [inicio] 200px [fila2] 40px [fila3] 115px [fila4] 50px [fila5] 197px [fila6] 51px [fila7] 160px [fila8] 80px [fila9] 40px [fila10] 50px [fila11] 80px [fila12] 27px [fila13] 41px [fila14] 113px [fila15] 113px [fila16] 200px [final];
     grid-gap: 5px;
-    min-height: 100vh;
     height: auto;
 }
 
@@ -350,11 +349,15 @@ body{
 }
 @media only screen and (max-width: 580px) {
     .calendar--hero{
-        margin: 20px;
+        border-radius: 10px;
+        padding: 5px;
+        margin-top: 5%;
+        margin-bottom: 5%;
     }
     .calendar__container{
         grid-template-columns: [inicio] 48.4px [linea2] 20.6px [linea3] 10.6px [linea4] 33.75px [linea5] 31.25px [linea6] 12.8px [linea7] 21.5px [linea8] 24.3px [linea9] 21.8px [linea10] 23.75px [linea11] 8.125px [linea12] 66.875px [final];
         grid-template-rows: [inicio] 62.5px [fila2] 12.5px [fila3] 35.9px [fila4] 15.625px [fila5] 61.5px [fila6] 15.9px [fila7] 50px [fila8] 25px [fila9] 12.5px [fila10] 15.6px [fila11] 25px [fila12] 8.4px [fila13] 12.8px [fila14] 35.3px [fila15] 35.3px [fila16] 62.5px [final];
+        grid-gap: 2px;
     }
 }
 @media only screen and (max-height: 580px) and ( max-height:813px) {
