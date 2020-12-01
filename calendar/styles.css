@@ -113,9 +113,22 @@ body{
   transition: all 0.3s cubic-bezier(.25,.8,.25,1);
 }
 
-.carousel__item:nth-of-type(1){
+.ocultar{
+    display: none;
+}
+
+.descubrir{
+    display: inline-block;
+}
+
+.oferta1{
     background-image: url('https://firebasestorage.googleapis.com/v0/b/legostores-5e8b8.appspot.com/o/calendar%2Fcards%2F30-hight%20(1).png?alt=media&token=96bc765d-e01a-4e8c-b336-3e1285ce9a2b');
 }
+
+.carousel__item-reto{
+    background-image: url('https://firebasestorage.googleapis.com/v0/b/legostores-5e8b8.appspot.com/o/calendar%2Fretos%2FCard_750x1334%20(1).png?alt=media&token=2979f0aa-1ff4-4ded-8b95-5d12e062439c');
+}
+
 .carousel__item:nth-of-type(2){
     background-image: url('https://firebasestorage.googleapis.com/v0/b/legostores-5e8b8.appspot.com/o/calendar%2Fdias%20destapados%2Fdic3x1%20(1).png?alt=media&token=29b986ee-118c-40c9-ba96-87aca5f4672c');
 }

@@ -21,27 +21,27 @@
             </div>
             <div class="buttonSwitch__container">
                 <div class="buttons">
-                    <button class="bta #1" type="button">Ofertas</button>
-                    <button class="bta #2" type="button">Retos</button>
+                    <button class="bta #1" type="button" id="ofertasButton">Ofertas</button>
+                    <button class="bta #2" type="button" id="retosButton">Retos</button>
                 </div>
             </div>
             <div class="cards">
                         <div class="carousel__container">
-                            <div class="carousel__item">
+                            <div class="carousel__item oferta1" id="card">
+                                <div class="bta-container__carousel" id="buttonCard">
+                                    <a href="https://lego.juguetron.mx/sucursales-lego/" target="_blank">
+                                        <button class="bta-carousel" type="button">Ver más</button>
+                                    </a>
+                                </div>
+                            </div>
+                            <div class="carousel__item" id="cardOffer">
                                 <div class="bta-container__carousel">
                                     <a href="https://lego.juguetron.mx/sucursales-lego/" target="_blank">
                                         <button class="bta-carousel" type="button">Ver más</button>
                                     </a>
                                 </div>
                             </div>
-                            <div class="carousel__item">
-                                <div class="bta-container__carousel">
-                                    <a href="https://lego.juguetron.mx/sucursales-lego/" target="_blank">
-                                        <button class="bta-carousel" type="button">Ver más</button>
-                                    </a>
-                                </div>
-                            </div>
-                            <div class="carousel__item">
+                            <div class="carousel__item" id="cardOffer2">
                                 <div class="bta-container__carousel">
                                     <button class="bta-carousel" type="button">Próximamente</button>
                                 </div>
@@ -148,5 +148,6 @@
         </section>
     </div>
     </div>
+    <script src="./main.js"></script>
 </body>
 </html>
