@@ -19,6 +19,10 @@ body{
     letter-spacing: 2px;
 }
 
+.btaActive{
+    
+}
+
 .bta:nth-of-type(1){
     border-radius: 10px 0px 0px 10px;
 }
@@ -332,7 +336,7 @@ body{
 .calendar--item:nth-of-type(23){
     grid-column: inicio / linea3;
     grid-row: fila11 / fila15;
-    display: none;
+    /* display: none; */
 }
 .calendar--item:nth-of-type(24){
     grid-column: linea3 / linea5;
