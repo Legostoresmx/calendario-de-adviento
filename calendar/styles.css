@@ -17,6 +17,7 @@ body{
     color: white;
     cursor: pointer;
     letter-spacing: 2px;
+    font-size: 16px;
 }
 
 .btaActive{
