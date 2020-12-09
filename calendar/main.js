@@ -5,6 +5,7 @@ const cardOffer = document.getElementById('cardOffer');
 const cardOffer2 = document.getElementById('cardOffer2');
 const buttonCard = document.getElementById('buttonCard');
 
+
 retosButton.addEventListener('click', function (){
     removeOffer();
     addReto();
@@ -15,12 +16,10 @@ retosButton.addEventListener('click', function (){
 })
 
 function addReto(){
-    console.log('hola1')
     card.classList.add('carousel__item-reto');
 }
 
 function removeOffer() {
-    console.log('hola2')
     card.classList.remove('oferta1');
 }
 
